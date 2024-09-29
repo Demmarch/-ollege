@@ -1,0 +1,9 @@
+﻿  Laba.cpp
+h:\оап\лаба 10\library_6\library_6\library.h(1): warning C4068: неизвестная директива pragma
+h:\оап\лаба 10\library_6\laba\laba.cpp(7): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+h:\оап\лаба 10\library_6\laba\laba.cpp(12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+Laba.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl Input_array(float *,int)" (?Input_array@@YAXPEAMH@Z) в функции main
+Laba.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl Out_array(float *,int)" (?Out_array@@YAXPEAMH@Z) в функции main
+Laba.obj : error LNK2019: ссылка на неразрешенный внешний символ "float __cdecl Srednee(float *,int,int,int)" (?Srednee@@YAMPEAMHHH@Z) в функции main
+Laba.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl Vstavka(float *,int &,float,int)" (?Vstavka@@YAXPEAMAEAHMH@Z) в функции main
+H:\ОАП\Лаба 10\LIBRARY_6\x64\Debug\Laba.exe : fatal error LNK1120: неразрешенных внешних элементов: 4

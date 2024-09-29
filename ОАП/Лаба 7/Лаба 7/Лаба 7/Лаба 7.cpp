@@ -14,7 +14,8 @@ void inparr(int a[m][n])
 			scanf_s("%d", &a[i][j]);
 		}
 	}
-}void outarr(int a[m][n])
+}
+void outarr(int a[m][n])
 {
 	int i, j;
 	setlocale(LC_ALL, "ru");
@@ -27,7 +28,8 @@ void inparr(int a[m][n])
 		}
 		printf("\n");
 	}
-}void prossmatrix(int a[m][n])
+}
+void prossmatrix(int a[m][n])
 {
 	int max_el = a[0][0];
 	int m_for_max = 0;

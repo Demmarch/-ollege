@@ -67,24 +67,23 @@ int main()
 	string word;
 	cout << "Введите текст: ";
 	getline(cin, text);
-	cout << "Введите новое слово: ";
-	cin >> newWord;
+	//cout << "Введите новое слово: ";
+	//cin >> newWord;
 	char *textChars = new char[text.size() + 1]; 
 	strcpy_s(textChars, text.size() + 1, text.c_str());
 	char *token;
 	char *context = nullptr; 
-	token = strtok_s(textChars, " ", &context);
-	int wordCount = 0;
+	token = strtok_s(textChars, "/", &context);
+	cout << "Введите букву: ";
+	char findletter;
+	cin >> findletter;
 	while (token != nullptr) {
-		wordCount++;
 		word = token; 
-		if (wordCount == 2) {
-			text.insert(text.find(word) + word.size(), " " + newWord + " ");
-			break;
+		if (word[0] == findletter) {
+			cout << word;
 		}
-		token = strtok_s(nullptr, " ", &context);   
+		token = strtok_s(nullptr, "/", &context);   
 	}
 	delete[] textChars; 
-	cout << "Измененный текст: " << text << endl;
 	return 0;
 }

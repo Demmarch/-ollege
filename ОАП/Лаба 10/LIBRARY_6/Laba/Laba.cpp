@@ -3,7 +3,7 @@
 #include "time.h"
 #include "..\LIBRARY_6\LIBRARY.h"
 
-void main()
+int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int kol = 10;

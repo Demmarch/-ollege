@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1972
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIBRARY_6", "LIBRARY_6\LIBRARY_6.vcxproj", "{00110C04-0A53-4B3C-A760-CC4CF01E1BB8}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Laba", "Laba\Laba.vcxproj", "{6BE969DD-8DAF-4456-91D5-02DF3BBC5AE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{00110C04-0A53-4B3C-A760-CC4CF01E1BB8} = {00110C04-0A53-4B3C-A760-CC4CF01E1BB8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-#pragma ones
+#pragma
 void Input_array(float *A, int k);
 void Out_array(float *A, int k);
 float Srednee(float *A, int k, int n1, int n2);
