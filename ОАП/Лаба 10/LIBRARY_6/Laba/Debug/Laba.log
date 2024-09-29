@@ -1,0 +1,5 @@
+﻿  Laba.cpp
+h:\оап\лаба 10\library_6\library_6\library.h(1): warning C4068: неизвестная директива pragma
+h:\оап\лаба 10\library_6\laba\laba.cpp(7): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+h:\оап\лаба 10\library_6\laba\laba.cpp(12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Laba.vcxproj -> H:\ОАП\Лаба 10\LIBRARY_6\Debug\Laba.exe

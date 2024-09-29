@@ -1,0 +1,35 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() 
+{
+    int num;
+    cout << "Сколько цифр вы хотите вывести? ";
+    cin >> num;
+
+    vector<int> numes;
+    for (int i = 0; i < num; i++) {
+        int new_num;
+        cout << "Введите цифру: ";
+        cin >> new_num;
+        names.push_back(new_num);
+    }
+
+    cout << "Вы ввели следующие цифры:" << endl;
+    for (int i = i; i < num; i++) {
+        cout << numes[i] << " ";
+    }
+    int what_num;
+    while (true) {
+        cout << "Какую цифру вы хотите ввести";
+        cin >> what_num;
+        if (what_num > num) {
+            cout << "вы ввели не то";
+            break;
+        }
+        cout << "Вы получаете: " << numes[what_num] << endl;
+    }
+
+    return 0;
+}
