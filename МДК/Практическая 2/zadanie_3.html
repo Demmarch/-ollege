@@ -1,0 +1,36 @@
+﻿<html>
+<head>
+<title>Разработка сценариев</title> 
+<script language="javascript"> 
+    function Check1Clicked(){
+        document.getElementById("TextBox").value="Выбран флажок1";
+    }
+    function Check2Clicked(){
+        document.getElementById("TextBox").value="Выбран флажок2";
+    }
+    function Check3Clicked(){
+        document.getElementById("TextBox").value="Выбран флажок3";
+    }
+    function Check4Clicked(){
+        document.getElementById("TextBox").value="Выбран флажок4";
+    }
+    function Check5Clicked(){
+        document.getElementById("TextBox").value="Выбран флажок5";
+    }
+</script>
+</head> 
+
+<body> 
+
+    <h1>Выберите флажок</h1>
+    <table border="1" bordercolor ="darkred" width = "200" style="background-color: grey;">
+        <tr><th><input type="checkbox" name="Check1" onClick="Check1Clicked()"> Флажок 1 </th></tr>
+        <tr><th><input type="checkbox" name="Check2" onClick = "Check2Clicked()"> Флажок 2 </th></tr>
+        <tr><th><input type="checkbox" name="Check3" onClick ="Check3Clicked()"> Флажок 3 </th></tr>
+        <tr><th><input type="checkbox" name="Check4" onClick="Check4Clicked()"> Флажок4</th></tr>
+        <tr><th><input type="checkbox" name="Check5" onClick="Check5Clicked()"> Флажок5</th></tr> 
+    </table>
+    <br/>
+    <input type="text" id="TextBox" Size="30">
+</body>
+</html>

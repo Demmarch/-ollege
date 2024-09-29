@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Задание 2</title>
+    <style>
+      button {
+        padding: 10px 20px;
+        color: red;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 20px;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="selectAll">Выбрать всё</button> <br>
+      <label>Флажок 1 
+        <input name="checkbox1" type="checkbox">
+      </label><br>
+      <label>Флажок 2 
+        <input name="checkbox2" type="checkbox">
+      </label><br>
+      <label>Флажок 3 
+        <input name="checkbox3" type="checkbox">
+      </label><br>
+      <label>Флажок 4 
+        <input name="checkbox4" type="checkbox">
+      </label><br>
+      <label>Флажок 5 
+        <input name="checkbox5" type="checkbox">
+      </label><br>
+      <label>Переключатель 1 
+        <input name="checkbox1" type="radio">
+      </label><br>
+      <label>Переключатель 2 
+        <input name="checkbox2" type="radio">
+      </label><br>
+      <label>Переключатель 3 
+      <input name="checkbox3" type="radio">
+      </label>
+    </div>
+
+    <script>
+      let swi = false;
+      document.getElementById("selectAll").addEventListener("click", function() {
+      const inputs = document.querySelectorAll("input[type='checkbox'], input[type='radio']");    
+      if (swi == false) {
+        inputs.forEach(function(input) {
+          input.checked = true;        
+        });
+        swi = true;
+      }
+      else {
+        inputs.forEach(function(input) {
+          input.checked = false;        
+        });
+        swi = false;
+      }
+    });
+    </script>
+  </body>
+</html>

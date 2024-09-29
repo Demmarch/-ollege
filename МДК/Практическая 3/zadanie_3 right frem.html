@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <font face=Arial>
+        <h1>Номер телефона</h1>
+        <p><span id="phoneNumber"></span></p>
+    </font>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const numberId = urlParams.get('number');
+        const numbers = {
+            1: "+7 (982) 707-18-99",
+            2: "+7 (911) 326-31-63",
+            3: "+7 (991) 607-04-74",
+            4: "+7 (900) 565-65-45",
+            5: "+7 (989) 362-33-45",
+            6: "+7 (901) 145-32-56",
+        };
+        document.getElementById("phoneNumber").innerText = numbers[numberId];
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Кнопка</title>
+</head>
+<body>
+  <h1>Кнопка</h1>
+  <button onclick="checkSchedule()" id = "button">Не нажимай!</button><br>
+  <p id="output"></p>
+  <script>
+      function checkSchedule() {
+        document.getElementById("button").innerText = "Ты нажал на меня!"
+        document.getElementById("output").innerText = "Зачем?";
+    }
+  </script>
+</body>
+</html>

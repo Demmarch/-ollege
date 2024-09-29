@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Задание 1</title>
+    <style>
+      div {
+        height: 950px;
+      }
+      #text {
+        font-size: 35px;
+      }
+      #X, #Y {
+        height: 50px;
+        font-size: 35px;
+        width: 5%;
+      }
+      #buttons {
+        height: 50px;
+        font-size: 35px;
+        width: 30%;
+      }
+    </style>
+  </head>
+  <script>
+    function coordinate(event) {
+      let x = event.clientX;
+      let y = event.clientY;
+      document.getElementById("X").value = x;
+      document.getElementById("Y").value = y;
+    }
+    function mousebuttons(event) {
+      let keyState = "";
+        if (event.buttons == 1) {
+          keyState = "ЛКМ нажато";
+        }
+        else if (event.buttons == 2) {
+          keyState = "ПКМ нажато";
+        }
+        else if (event.buttons == 4) {
+          keyState = "Средняя кнопка мыши нажата";
+          }
+        else {
+          keyState = "Клавиши мыши не нажаты";
+        }
+        document.getElementById("buttons").value = keyState;
+    }
+  </script>     
+  <body onmousemove="coordinate(event); mousebuttons(event)">
+    <div>
+      <a id="text">X = </a>
+      <input type="text" id="X" value="None"><br><br>
+      <a id="text">Y = </a>
+      <input type="text" id="Y" value="None"><br><br>
+      <input type="text" id="buttons" value="None">
+    </div>
+  </body>
+</html>

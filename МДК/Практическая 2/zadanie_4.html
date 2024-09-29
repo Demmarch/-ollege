@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+<title>Разработка сценариев</title> 
+<script language="javascript"> 
+    function Check1Clicked(){
+        document.getElementById("TextBox").value="Выбран переключатель 1";
+    }
+    function Check2Clicked(){
+        document.getElementById("TextBox").value="Выбран переключатель 2";
+    }
+    function Check3Clicked(){
+        document.getElementById("TextBox").value="Выбран переключатель 3";
+    }
+    function Check4Clicked(){
+        document.getElementById("TextBox").value="Выбран переключатель 4";
+    }
+    function Check5Clicked(){
+        document.getElementById("TextBox").value="Выбран переключатель 5";
+    }
+</script>
+</head> 
+<body> 
+
+    <h1>Выберите Переключатель</h1>
+    <table border="1" bordercolor ="darkred" width = "200" style="background-color: grey;">
+        <tr><th><input type="radio" name="Check" onClick="Check1Clicked()"> Переключатель 1 </th></tr>
+        <tr><th><input type="radio" name="Check" onClick = "Check2Clicked()"> Переключатель 2 </th></tr>
+        <tr><th><input type="radio" name="Check" onClick ="Check3Clicked()"> Переключатель 3 </th></tr>
+        <tr><th><input type="radio" name="Check" onClick="Check4Clicked()"> Переключатель 4</th></tr>
+        <tr><th><input type="radio" name="Check" onClick="Check5Clicked()"> Переключатель 5</th></tr> 
+    </table>
+    <br/>
+    <input type="text" id="TextBox" Size="30">
+</body>
+</html>

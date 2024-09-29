@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Задание 6</title>
+<style>
+    body {
+        text-align: left;
+    }
+
+    button {
+        color: rgb(88, 19, 128);
+        border-radius: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <label>Введите периметр окружности:</label>
+    <input id="P"><br><br>
+    <button onclick="calculate()">Рассчитать</button><br><br>
+    <label>Длина окружности:</label>
+    <input id="len"><br><br>
+    <label>Площадь круга:</label>
+    <input id="S"><br><br>
+<script>
+    function calculate() {
+        let per = parseFloat(document.getElementById('P').value);
+        let area = Math.PI * Math.pow(per / (2 * Math.PI), 2);
+        document.getElementById('len').value = per.toFixed(2);
+        document.getElementById('S').value = area.toFixed(2);
+    }
+</script>
+</body>
+</html>

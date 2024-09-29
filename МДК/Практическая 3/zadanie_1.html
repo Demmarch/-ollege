@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Работа магазина</title>
+</head>
+<body>
+  <h1>Работа магазина в данный момент</h1>
+  <button onclick="checkSchedule()">Проверить</button><br>
+
+  <p id="output"></p>
+
+  <script>
+      function checkSchedule() {
+            obDate = new Date();
+            stringDate = obDate.toLocaleString();
+            document.getElementById("output").innerText = stringDate;
+            let message = "Магазин работает с 9 до 22 с перерывом в 14 часов";
+            const data_and_time = stringDate.split(", ");
+            let data = data_and_time[0].split(".");
+            const time = data_and_time[1].split(":");
+            let hour = parseInt(time[0], 10);
+            let prazdniki = [[1, 1], [1, 2], [2, 23],[3, 8], [5, 1], [12, 31]];
+            if (hour >= 9 && hour <= 22 && hour != 14) {
+              for (let i of prazdniki) {
+                if (data[0] == i[0] && data[1] == i[1]) {
+                  message = "Магазин не работает в праздники";
+                }
+              }              
+            }
+            else {
+              if (hour == 14) {
+                message = "Сейчас перерыв";
+              }
+              else {
+                message = "Магазин сейчас закрыт";
+              }
+            }
+            document.getElementById("output").innerText = message;
+    }
+  </script>
+</body>
+</html>

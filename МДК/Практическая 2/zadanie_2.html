@@ -1,0 +1,18 @@
+﻿<html>
+ <title> Работа с кнопками </title> 
+<body> 
+    <center>
+    <form name="form1">
+    <input type="text" name="Textbox" size="25">
+    <input type="button" value="Показать сообщение" onClick="ShowMessage(this.form)"> 
+    </form>
+    </center>
+</body>
+
+<script language="JavaScript"> function ShowMessage(form1) {
+    document.form1.Textbox.value = "Привет"
+    }
+
+</script>
+</html>
+
